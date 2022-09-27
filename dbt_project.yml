@@ -35,3 +35,7 @@ models:
         
 vars:
   start_date: '1996-01-01'
+  ga4:
+    project: "bigquery-public-data"
+    dataset: "ga4_obfuscated_sample_ecommerce"
+    start_date: "20210120"
