@@ -32,6 +32,8 @@ models:
   bigquery_demo_project:
       marts:
         materialized: view
+  ga4:
+      +schema: ga4
         
 vars:
   start_date: '1996-01-01'
