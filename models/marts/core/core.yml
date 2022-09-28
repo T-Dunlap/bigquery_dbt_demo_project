@@ -31,7 +31,7 @@ models:
           - unique
           - not_null
                 
-  - name: fct_orders
+  - name: fct_orders 
     columns:
       - name: order_key
         tests:
