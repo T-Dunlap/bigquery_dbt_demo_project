@@ -33,7 +33,6 @@ models:
       marts:
         materialized: view
   ga4:
-
       +schema: ga4
         
 vars:
