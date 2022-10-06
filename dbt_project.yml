@@ -34,6 +34,7 @@ models:
       marts:
         materialized: view
   ga4:
+      +database: "{{env_var('DBT_TARGET_PROJECT')}}"
       +schema: ga4
         
 vars:
