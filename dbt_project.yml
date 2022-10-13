@@ -31,7 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   bigquery_demo_project:
       +database: "{{env_var('DBT_TARGET_PROJECT')}}"
-      marts:
+      staging:
         materialized: view
   ga4:
       +database: "{{env_var('DBT_TARGET_PROJECT')}}"
