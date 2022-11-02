@@ -56,5 +56,3 @@ from
 
 order by
     order_date
-
-    {{ var('var_name') }}
