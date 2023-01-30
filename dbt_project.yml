@@ -33,6 +33,8 @@ models:
       +database: "{{env_var('DBT_TARGET_PROJECT')}}"
       marts:
         materialized: view
+      example: 
+        +schema: exampleschema
   ga4:
       +database: "{{env_var('DBT_TARGET_PROJECT')}}"
       +schema: ga4
