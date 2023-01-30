@@ -4,19 +4,7 @@
 
 {% macro default__generate_alias_name(custom_alias_name=none, node=none) -%}
 
-    {%- if target.name == 'ci' -%}
-
-        {%- if custom_alias_name is none -%}
-
-            {{ target.schema }}_{{ node.name }}
-
-        {%- else -%}
-
-            {{ target.schema }}_{{ custom_alias_name | trim }}
-
-        {%- endif -%}
-
-    {%- elif target.name == 'dev' -%}
+    {%- if target.name == 'dev' or target.name == 'ci' -%}
 
         {%- if custom_alias_name is none -%}
 
@@ -41,8 +29,6 @@
         {%- endif -%}
 
     {%- endif -%}
-
-
 
 
 
