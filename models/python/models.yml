@@ -1,0 +1,5 @@
+version: 2
+models:
+  - name: python_model
+    config:
+      submission_method: serverless
