@@ -33,6 +33,10 @@ models:
       +database: "{{env_var('DBT_TARGET_PROJECT')}}"
       marts:
         materialized: view
+      python: 
+        docs:
+          node_color: '#FFBF00'
+          
   ga4:
       +database: "{{env_var('DBT_TARGET_PROJECT')}}"
       +schema: ga4

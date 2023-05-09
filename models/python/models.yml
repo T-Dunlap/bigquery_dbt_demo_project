@@ -3,3 +3,18 @@ models:
   - name: python_model
     config:
       submission_method: serverless
+  - name: fct_order_stats
+    config:
+      submission_method: serverless
+      gcs_bucket: dbt_python_tdunlap
+      dataproc_region: us-west1
+      location: us-west1b
+      materialized: table
+  - name: tutorial_column_addition
+    config:
+      submission_method: serverless
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
