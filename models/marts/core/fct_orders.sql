@@ -37,7 +37,7 @@ final as (
         orders.status_code,
         orders.priority_code,
         orders.ship_priority,
-        orders.clerk_name,
+        --orders.clerk_name,  --4/13/2021 KJ: Commenting out because not used.
                 
         1 as order_count,                
         order_item_summary.gross_item_sales_amount,
